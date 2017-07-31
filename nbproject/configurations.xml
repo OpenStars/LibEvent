@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="inc" displayName="inc" projectFiles="true">
+      <logicalFolder name="event2" displayName="event2" projectFiles="true">
+        <itemPath>inc/event2/buffer.h</itemPath>
+        <itemPath>inc/event2/buffer_compat.h</itemPath>
+        <itemPath>inc/event2/bufferevent.h</itemPath>
+        <itemPath>inc/event2/bufferevent_compat.h</itemPath>
+        <itemPath>inc/event2/bufferevent_ssl.h</itemPath>
+        <itemPath>inc/event2/bufferevent_struct.h</itemPath>
+        <itemPath>inc/event2/dns.h</itemPath>
+        <itemPath>inc/event2/dns_compat.h</itemPath>
+        <itemPath>inc/event2/dns_struct.h</itemPath>
+        <itemPath>inc/event2/event-config.h</itemPath>
+        <itemPath>inc/event2/event.h</itemPath>
+        <itemPath>inc/event2/event_compat.h</itemPath>
+        <itemPath>inc/event2/event_struct.h</itemPath>
+        <itemPath>inc/event2/http.h</itemPath>
+        <itemPath>inc/event2/http_compat.h</itemPath>
+        <itemPath>inc/event2/http_struct.h</itemPath>
+        <itemPath>inc/event2/keyvalq_struct.h</itemPath>
+        <itemPath>inc/event2/listener.h</itemPath>
+        <itemPath>inc/event2/rpc.h</itemPath>
+        <itemPath>inc/event2/rpc_compat.h</itemPath>
+        <itemPath>inc/event2/rpc_struct.h</itemPath>
+        <itemPath>inc/event2/tag.h</itemPath>
+        <itemPath>inc/event2/tag_compat.h</itemPath>
+        <itemPath>inc/event2/thread.h</itemPath>
+        <itemPath>inc/event2/util.h</itemPath>
+      </logicalFolder>
+      <itemPath>inc/evconfig-private.h</itemPath>
+      <itemPath>inc/evdns.h</itemPath>
+      <itemPath>inc/event.h</itemPath>
+      <itemPath>inc/evhttp.h</itemPath>
+      <itemPath>inc/evrpc.h</itemPath>
+      <itemPath>inc/evutil.h</itemPath>
+      <itemPath>inc/openssl-compat.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="inc-internal"
+                   displayName="inc-internal"
+                   projectFiles="true">
+      <itemPath>inc-internal/bufferevent-internal.h</itemPath>
+      <itemPath>inc-internal/changelist-internal.h</itemPath>
+      <itemPath>inc-internal/config.h</itemPath>
+      <itemPath>inc-internal/defer-internal.h</itemPath>
+      <itemPath>inc-internal/evbuffer-internal.h</itemPath>
+      <itemPath>inc-internal/event-internal.h</itemPath>
+      <itemPath>inc-internal/evmap-internal.h</itemPath>
+      <itemPath>inc-internal/evrpc-internal.h</itemPath>
+      <itemPath>inc-internal/evsignal-internal.h</itemPath>
+      <itemPath>inc-internal/evthread-internal.h</itemPath>
+      <itemPath>inc-internal/ht-internal.h</itemPath>
+      <itemPath>inc-internal/http-internal.h</itemPath>
+      <itemPath>inc-internal/iocp-internal.h</itemPath>
+      <itemPath>inc-internal/ipv6-internal.h</itemPath>
+      <itemPath>inc-internal/log-internal.h</itemPath>
+      <itemPath>inc-internal/minheap-internal.h</itemPath>
+      <itemPath>inc-internal/mm-internal.h</itemPath>
+      <itemPath>inc-internal/ratelim-internal.h</itemPath>
+      <itemPath>inc-internal/strlcpy-internal.h</itemPath>
+      <itemPath>inc-internal/util-internal.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <itemPath>src/buffer.c</itemPath>
+      <itemPath>src/bufferevent.c</itemPath>
+      <itemPath>src/bufferevent_filter.c</itemPath>
+      <itemPath>src/bufferevent_openssl.c</itemPath>
+      <itemPath>src/bufferevent_pair.c</itemPath>
+      <itemPath>src/bufferevent_ratelim.c</itemPath>
+      <itemPath>src/bufferevent_sock.c</itemPath>
+      <itemPath>src/epoll.c</itemPath>
+      <itemPath>src/evdns.c</itemPath>
+      <itemPath>src/event.c</itemPath>
+      <itemPath>src/event_tagging.c</itemPath>
+      <itemPath>src/evmap.c</itemPath>
+      <itemPath>src/evrpc.c</itemPath>
+      <itemPath>src/evthread.c</itemPath>
+      <itemPath>src/evthread_pthread.c</itemPath>
+      <itemPath>src/evutil.c</itemPath>
+      <itemPath>src/evutil_rand.c</itemPath>
+      <itemPath>src/http.c</itemPath>
+      <itemPath>src/listener.c</itemPath>
+      <itemPath>src/log.c</itemPath>
+      <itemPath>src/poll.c</itemPath>
+      <itemPath>src/select.c</itemPath>
+      <itemPath>src/signal.c</itemPath>
+      <itemPath>src/strlcpy.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>inc</pElem>
+            <pElem>inc-internal</pElem>
+          </incDir>
+          <commandLine>-fPIC</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>-fPIC</commandLine>
+        </ccTool>
+        <archiverTool>
+          <output>lib/libeventd.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="inc-internal/bufferevent-internal.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc-internal/changelist-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/defer-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evbuffer-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/event-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evmap-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evrpc-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evsignal-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evthread-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/ht-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/http-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/iocp-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/ipv6-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/log-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/minheap-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/mm-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/ratelim-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/strlcpy-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/util-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evconfig-private.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evdns.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/buffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/buffer_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent_ssl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/dns.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/dns_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/dns_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event-config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/http.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/http_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/http_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/keyvalq_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/listener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/rpc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/rpc_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/rpc_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/tag.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/tag_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evhttp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evrpc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evutil.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/openssl-compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/buffer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_filter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_openssl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_pair.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_ratelim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_sock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/epoll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evdns.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/event.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/event_tagging.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evrpc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evthread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evthread_pthread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evutil.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evutil_rand.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/listener.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/poll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/select.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/signal.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/strlcpy.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>inc</pElem>
+            <pElem>inc-internal</pElem>
+          </incDir>
+          <commandLine>-fPIC</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-fPIC</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+          <output>lib/libevent.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="inc-internal/bufferevent-internal.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc-internal/changelist-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/defer-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evbuffer-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/event-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evmap-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evrpc-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evsignal-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/evthread-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/ht-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/http-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/iocp-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/ipv6-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/log-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/minheap-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/mm-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/ratelim-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/strlcpy-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc-internal/util-internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evconfig-private.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evdns.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/buffer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/buffer_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent_ssl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/bufferevent_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/dns.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/dns_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/dns_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event-config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/event_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/http.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/http_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/http_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/keyvalq_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/listener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/rpc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/rpc_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/rpc_struct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/tag.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/tag_compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/event2/util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evhttp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evrpc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/evutil.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/openssl-compat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/buffer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_filter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_openssl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_pair.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_ratelim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/bufferevent_sock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/epoll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evdns.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/event.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/event_tagging.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evrpc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evthread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evthread_pthread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evutil.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/evutil_rand.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/http.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/listener.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/poll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/select.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/signal.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/strlcpy.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
