@@ -83,6 +83,7 @@
       <itemPath>src/evthread_pthread.c</itemPath>
       <itemPath>src/evutil.c</itemPath>
       <itemPath>src/evutil_rand.c</itemPath>
+      <itemPath>../../services/contribs/LibEvent/src/evutil_time.c</itemPath>
       <itemPath>src/http.c</itemPath>
       <itemPath>src/listener.c</itemPath>
       <itemPath>src/log.c</itemPath>
@@ -126,6 +127,11 @@
           <output>lib/libeventd.a</output>
         </archiverTool>
       </compileType>
+      <item path="../../services/contribs/LibEvent/src/evutil_time.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
       <item path="inc-internal/bufferevent-internal.h"
             ex="false"
             tool="3"
@@ -311,6 +317,11 @@
           <output>lib/libevent.a</output>
         </archiverTool>
       </compileType>
+      <item path="../../services/contribs/LibEvent/src/evutil_time.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
       <item path="inc-internal/bufferevent-internal.h"
             ex="false"
             tool="3"

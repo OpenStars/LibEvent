@@ -10,5 +10,11 @@
         <group/>
         <group name="BigSetGroup"/>
         <group name="BigSetKV_v2"/>
+        <group name="hcore2017"/>
+        <group name="Trades">
+            <file>file:/data/data/src/cpp/hcore2017/services/contribs/LibEvent/src/evutil_time.c</file>
+            <file>file:/data/data/src/cpp/hcore2017/contribs/LibEvent/src/event.c</file>
+            <file>file:/data/data/src/cpp/hcore2017/contribs/LibEvent/src/time-internal.h</file>
+        </group>
     </open-files>
 </project-private>

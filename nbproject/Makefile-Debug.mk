@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/48cf67ae/evutil_time.o \
 	${OBJECTDIR}/src/buffer.o \
 	${OBJECTDIR}/src/bufferevent.o \
 	${OBJECTDIR}/src/bufferevent_filter.o \
@@ -86,6 +87,11 @@ lib/libeventd.a: ${OBJECTFILES}
 	${RM} lib/libeventd.a
 	${AR} -rv lib/libeventd.a ${OBJECTFILES} 
 	$(RANLIB) lib/libeventd.a
+
+${OBJECTDIR}/_ext/48cf67ae/evutil_time.o: ../../services/contribs/LibEvent/src/evutil_time.c
+	${MKDIR} -p ${OBJECTDIR}/_ext/48cf67ae
+	${RM} "$@.d"
+	$(COMPILE.c) -g -Iinc -Iinc-internal -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/48cf67ae/evutil_time.o ../../services/contribs/LibEvent/src/evutil_time.c
 
 ${OBJECTDIR}/src/buffer.o: src/buffer.c
 	${MKDIR} -p ${OBJECTDIR}/src
